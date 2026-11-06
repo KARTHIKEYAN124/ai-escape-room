@@ -32,7 +32,7 @@ User testing also exposed overly strict commands: "examining the desk", "bookshe
 
 ## 5. Evaluation and deliverables
 
-The automated suite contains 36 test methods covering a complete escape, invalid combinations, missing inventory, false history, administrator claims, nonexistent objects, repeated actions and premature exit attempts. Model-boundary tests verify that invented codes and arbitrary narration cannot corrupt the validated result. Streamlit interaction tests cover restart, completion, model selection, recovery and fallback warnings. All 36 tests pass without real API requests.
+The automated suite contains 39 test methods covering a complete escape, invalid combinations, missing inventory, false history, administrator claims, nonexistent objects, repeated actions and premature exit attempts. Model-boundary tests verify that invented codes and arbitrary narration cannot corrupt the validated result. Streamlit interaction tests cover restart, completion, model selection, recovery and fallback warnings. All 39 tests pass without real API requests.
 
 Seven controlled fault-injection comparisons demonstrate the architectural difference. Deliberately faulty model fixtures simulate missing inventory, wrong codes, false history, administrator impersonation, secret disclosure, invented objects and premature escape. Version 1 passes the injected narration through; Version 2 rejects invalid state transitions and unapproved narration. All seven Version 2 integrity checks pass. The recorded responses and state snapshots are provided in the comparison-results files.
 

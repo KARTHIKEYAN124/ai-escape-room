@@ -25,7 +25,7 @@ Choose the version and Gemini API in the sidebar, enter your key, load available
 .\.venv\Scripts\python scripts/build_submission.py
 ```
 
-The builder runs the tests, executes seven offline comparisons, generates SVG and JPG diagrams and a three-page report, and creates `AI-Escape-Room-submission.zip`. `submission-manifest.json` records test counts and SHA-256 hashes of packaged files. The ZIP excludes the virtual environment, caches, actual secret files and empty IDE scratch file. Runtime requirements remain separate from optional report-building dependencies.
+The builder runs the tests, executes seven offline comparisons, generates SVG and JPG diagrams and a three-page report, and creates `AI-Escape-Room-submission.zip`. Only explicitly allowlisted project files are packaged. The ZIP excludes virtual environments, caches, credentials, datasets, live transcripts, logs, manifests, temporary files and nested archives. Attribution is omitted from the submission report copies while the editable source is preserved. A 5 MB per-file limit and recognized-key scan guard against accidental additions. `submission-manifest.json` records hashes alongside the ZIP, not inside it. Runtime requirements remain separate from optional report-building dependencies.
 
 ## Evidence and limits
 

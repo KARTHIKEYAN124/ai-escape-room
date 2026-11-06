@@ -55,7 +55,7 @@ Send one action per message: “examine the desk”, “search the bookshelf”,
 
 Engine, mocked model-boundary and Streamlit interaction tests require no API credits. See [architecture](docs/architecture.md), [comparison protocol](docs/test-cases.md), and [project report](docs/report.md). Live model comparisons require your own key; no fabricated live results are included.
 
-The suite contains **36 test methods**, covering the complete escape route, missing inventory, invalid codes, false history, administrator claims, invented objects, hidden-clue protection, repeated actions, model recovery, bounded retries and Streamlit interactions.
+The suite contains **39 test methods**, covering the complete escape route, missing inventory, invalid codes, false history, administrator claims, invented objects, hidden-clue protection, repeated actions, model recovery, bounded retries, Streamlit interactions and submission privacy checks.
 
 To reproduce the seven controlled comparisons without API calls:
 
@@ -91,7 +91,7 @@ Gemini returns an action. Python validates it against private rules and structur
 
 ## Assignment deliverables
 
-Start with the [submission checklist](docs/deliverables.md). The [three-page PDF report](docs/report.pdf), [Version 1 diagram](docs/architecture-v1.jpg), [Version 2 diagram](docs/architecture-v2.jpg), [seven executed comparisons](docs/comparison-results.md), and [test log](docs/test-results.txt) are included in [AI-Escape-Room-submission.zip](AI-Escape-Room-submission.zip). The editable [report source](docs/report.md), [JSON comparison results](docs/comparison-results.json), and [file-hash manifest](submission-manifest.json) are also included.
+Start with the [submission checklist](docs/deliverables.md). The three-page PDF report, both architecture diagrams, seven comparison results, application source and tests are included in the submission ZIP. The editable [report source](docs/report.md) and [JSON comparison results](docs/comparison-results.json) are also included. Rebuild `AI-Escape-Room-submission.zip` with the command below, or download it from the GitHub repository.
 
 To rebuild the report and package:
 
@@ -102,7 +102,7 @@ To rebuild the report and package:
 
 The seven comparisons inject deliberately faulty model outputs and exercise both code paths without API calls. They demonstrate architectural containment; they do not measure Gemini's live failure rate. To record live responses separately, configure `GEMINI_API_KEY` and `GEMINI_MODEL` in your environment and run `python scripts/compare_versions.py --live`.
 
-The build regenerates both SVG and high-resolution JPG diagrams, checks that the PDF report has exactly three pages, runs tests and creates the submission ZIP. It excludes credentials, caches and the virtual environment. Runtime dependencies are separate from optional report-building dependencies.
+The build regenerates both SVG and high-resolution JPG diagrams, checks that the PDF report has exactly three pages, runs tests and creates the submission ZIP. Packaging uses an explicit file allowlist: credentials, caches, virtual environments, datasets, live transcripts, logs, manifests, temporary files and nested ZIPs are excluded. Report attribution is omitted from the archived Markdown and generated PDF while the editable source retains it. Files larger than 5 MB or text containing recognized key patterns block packaging. Test logs and the checksum manifest are local build outputs, outside the archive. Runtime dependencies are separate from optional report-building dependencies.
 
 ## Troubleshooting
 

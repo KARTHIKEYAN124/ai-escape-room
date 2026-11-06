@@ -4,7 +4,7 @@
 
 Seven comparisons have been executed using deliberately faulty model outputs injected at the model boundary. The real Version 1 narration path passes those responses through, while the real Version 2 parser, engine and constrained narration contain the faults. **All seven Version 2 integrity checks pass.** These are controlled software tests, not observed Gemini failure rates.
 
-Read [actual comparison responses](comparison-results.md), [machine-readable results and final states](comparison-results.json), and [the complete automated test log](test-results.txt). Run `python scripts/compare_versions.py` to reproduce the seven cases without network calls. The cases are missing inventory, wrong code, false history, administrator impersonation, secret disclosure, invented object and premature exit.
+Read [actual comparison responses](comparison-results.md) and [machine-readable results and final states](comparison-results.json). Run `python scripts/compare_versions.py` to reproduce the seven cases without network calls, and `python -m unittest discover -s tests -v` to run the automated suite. Raw logs are intentionally excluded from the submission ZIP. The cases are missing inventory, wrong code, false history, administrator impersonation, secret disclosure, invented object and premature exit.
 
 The following table is also a live evaluation protocol. Its Version 1 column describes possible weaknesses, not predictions that Gemini must fail.
 

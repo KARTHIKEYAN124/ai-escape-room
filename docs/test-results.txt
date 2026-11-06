@@ -23,17 +23,20 @@ test_repeat_actions_are_idempotent (test_game.GameTests.test_repeat_actions_are_
 test_season_reference_guides_without_unlocking (test_game.GameTests.test_season_reference_guides_without_unlocking) ... ok
 test_take_key_through_locked_drawer (test_game.GameTests.test_take_key_through_locked_drawer) ... ok
 test_uncollected_key (test_game.GameTests.test_uncollected_key) ... ok
-test_missing_key_does_not_submit (test_ui.UITests.test_missing_key_does_not_submit) ... 2026-11-06 20:08:05.131 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+test_blocks_accidental_credential_in_an_allowed_file (test_packaging.PackagingTests.test_blocks_accidental_credential_in_an_allowed_file) ... ok
+test_excludes_unlisted_private_temporary_and_dataset_files (test_packaging.PackagingTests.test_excludes_unlisted_private_temporary_and_dataset_files) ... ok
+test_rejects_oversized_allowed_files (test_packaging.PackagingTests.test_rejects_oversized_allowed_files) ... ok
+test_missing_key_does_not_submit (test_ui.UITests.test_missing_key_does_not_submit) ... 2026-11-06 20:11:23.634 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 ok
-test_model_selection_updates_request_setting (test_ui.UITests.test_model_selection_updates_request_setting) ... 2026-11-06 20:08:05.572 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+test_model_selection_updates_request_setting (test_ui.UITests.test_model_selection_updates_request_setting) ... 2026-11-06 20:11:24.101 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 ok
-test_play_restart_and_switch (test_ui.UITests.test_play_restart_and_switch) ... 2026-11-06 20:08:05.827 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+test_play_restart_and_switch (test_ui.UITests.test_play_restart_and_switch) ... 2026-11-06 20:11:24.353 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 ok
-test_provider_failure_is_actionable_and_preserves_history (test_ui.UITests.test_provider_failure_is_actionable_and_preserves_history) ... 2026-11-06 20:08:06.215 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+test_provider_failure_is_actionable_and_preserves_history (test_ui.UITests.test_provider_failure_is_actionable_and_preserves_history) ... 2026-11-06 20:11:24.752 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 ok
-test_v1_recovers_model_and_continues_conversation (test_ui.UITests.test_v1_recovers_model_and_continues_conversation) ... 2026-11-06 20:08:06.462 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+test_v1_recovers_model_and_continues_conversation (test_ui.UITests.test_v1_recovers_model_and_continues_conversation) ... 2026-11-06 20:11:25.092 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 ok
-test_v2_fallback_notice_survives_rerun (test_ui.UITests.test_v2_fallback_notice_survives_rerun) ... 2026-11-06 20:08:06.756 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+test_v2_fallback_notice_survives_rerun (test_ui.UITests.test_v2_fallback_notice_survives_rerun) ... 2026-11-06 20:11:25.413 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
 ok
 test_access_error_does_not_switch_models (test_v1.VersionOneTests.test_access_error_does_not_switch_models) ... ok
 test_no_compatible_model_preserves_failure (test_v1.VersionOneTests.test_no_compatible_model_preserves_failure) ... ok
@@ -42,6 +45,6 @@ test_stale_model_retries_same_history_once (test_v1.VersionOneTests.test_stale_m
 test_working_model_needs_no_discovery (test_v1.VersionOneTests.test_working_model_needs_no_discovery) ... ok
 
 ----------------------------------------------------------------------
-Ran 36 tests in 2.564s
+Ran 39 tests in 3.095s
 
 OK
