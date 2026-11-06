@@ -1,0 +1,5 @@
+-r requirements.txt
+reportlab>=5.1,<6
+pypdf>=7,<8
+ty>=0.0.99,<1
+resvg-py>=0.5,<1

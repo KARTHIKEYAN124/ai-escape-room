@@ -1,0 +1,47 @@
+test_seven_faults_are_contained_by_version_two (test_comparisons.ComparisonTests.test_seven_faults_are_contained_by_version_two) ... ok
+test_certificate_error_is_actionable_without_raw_message (test_errors.ErrorTests.test_certificate_error_is_actionable_without_raw_message) ... ok
+test_client_errors_are_not_retried (test_errors.ErrorTests.test_client_errors_are_not_retried) ... ok
+test_interactions_agent_rejected_before_request (test_errors.ErrorTests.test_interactions_agent_rejected_before_request) ... ok
+test_invalid_key_reason (test_errors.ErrorTests.test_invalid_key_reason) ... ok
+test_model_discovery_filters_and_normalizes (test_errors.ErrorTests.test_model_discovery_filters_and_normalizes) ... ok
+test_persistent_outage_stops_after_two_attempts (test_errors.ErrorTests.test_persistent_outage_stops_after_two_attempts) ... ok
+test_safe_status_messages (test_errors.ErrorTests.test_safe_status_messages) ... ok
+test_string_status_and_sdk_error (test_errors.ErrorTests.test_string_status_and_sdk_error) ... ok
+test_transient_failure_retries_same_request_once (test_errors.ErrorTests.test_transient_failure_retries_same_request_once) ... ok
+test_unknown_error_does_not_leak (test_errors.ErrorTests.test_unknown_error_does_not_leak) ... ok
+test_administrator_and_claims (test_game.GameTests.test_administrator_and_claims) ... ok
+test_arbitrary_narration_is_not_displayed (test_game.GameTests.test_arbitrary_narration_is_not_displayed) ... ok
+test_exit_requires_progress_even_with_correct_code (test_game.GameTests.test_exit_requires_progress_even_with_correct_code) ... ok
+test_full_escape (test_game.GameTests.test_full_escape) ... ok
+test_generated_code_must_be_in_player_message (test_game.GameTests.test_generated_code_must_be_in_player_message) ... ok
+test_incorrect_drawer_code (test_game.GameTests.test_incorrect_drawer_code) ... ok
+test_model_cannot_write_state (test_game.GameTests.test_model_cannot_write_state) ... ok
+test_natural_exploration_phrases (test_game.GameTests.test_natural_exploration_phrases) ... ok
+test_no_early_hidden_clue (test_game.GameTests.test_no_early_hidden_clue) ... ok
+test_nonexistent_item_and_object (test_game.GameTests.test_nonexistent_item_and_object) ... ok
+test_repeat_actions_are_idempotent (test_game.GameTests.test_repeat_actions_are_idempotent) ... ok
+test_season_reference_guides_without_unlocking (test_game.GameTests.test_season_reference_guides_without_unlocking) ... ok
+test_take_key_through_locked_drawer (test_game.GameTests.test_take_key_through_locked_drawer) ... ok
+test_uncollected_key (test_game.GameTests.test_uncollected_key) ... ok
+test_missing_key_does_not_submit (test_ui.UITests.test_missing_key_does_not_submit) ... 2026-11-06 20:08:05.131 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_model_selection_updates_request_setting (test_ui.UITests.test_model_selection_updates_request_setting) ... 2026-11-06 20:08:05.572 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_play_restart_and_switch (test_ui.UITests.test_play_restart_and_switch) ... 2026-11-06 20:08:05.827 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_provider_failure_is_actionable_and_preserves_history (test_ui.UITests.test_provider_failure_is_actionable_and_preserves_history) ... 2026-11-06 20:08:06.215 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_v1_recovers_model_and_continues_conversation (test_ui.UITests.test_v1_recovers_model_and_continues_conversation) ... 2026-11-06 20:08:06.462 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_v2_fallback_notice_survives_rerun (test_ui.UITests.test_v2_fallback_notice_survives_rerun) ... 2026-11-06 20:08:06.756 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_access_error_does_not_switch_models (test_v1.VersionOneTests.test_access_error_does_not_switch_models) ... ok
+test_no_compatible_model_preserves_failure (test_v1.VersionOneTests.test_no_compatible_model_preserves_failure) ... ok
+test_retry_is_bounded (test_v1.VersionOneTests.test_retry_is_bounded) ... ok
+test_stale_model_retries_same_history_once (test_v1.VersionOneTests.test_stale_model_retries_same_history_once) ... ok
+test_working_model_needs_no_discovery (test_v1.VersionOneTests.test_working_model_needs_no_discovery) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 2.564s
+
+OK
